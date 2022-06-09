@@ -59,7 +59,7 @@ class Main {
         number1 = romanToNumber(stable00);
         number2 = romanToNumber(string03);
         if (number1 == -1 && number2 != -1 || number2 == -1 && number1 != -1){
-            throw new RuntimeException("используются одновременно разные системы счисления");
+            throw new RuntimeException("используются одновременно разные системы счисления или неверный ввод римских чисел");
         }
         char mode = 'r';
         if(number1 == -1){
